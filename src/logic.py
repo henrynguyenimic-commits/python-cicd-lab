@@ -1,14 +1,4 @@
-def     tinh_tong(a,b):
-    # Cố tình thừa 2 dấu cách sau chữ def
-    KetQua=a+b 
-return KetQua
-
-# Cố tình để thừa nhiều dòng trống ở cuối file
-
-
-
-
-
-
-
-
+def tinh_tong(a, b):
+    """Hàm tính tổng đơn giản đúng chuẩn PEP8."""
+    ket_qua = a + b
+    return ket_qua
