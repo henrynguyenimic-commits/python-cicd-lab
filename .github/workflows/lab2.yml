@@ -1,0 +1,21 @@
+name: Lab 2 - Secrets Management
+
+on: [push]
+
+jobs:
+  secure-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Run Secure Script
+        # Đây là bước 'đổ' Secret từ GitHub vào biến môi trường của máy ảo
+        env:
+          MY_SECRET_API_KEY: ${{ secrets.MY_SECRET_API_KEY }}
+        run: |
+          python src/main.py

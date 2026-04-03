@@ -1,4 +1,3 @@
 pytest==9.0.2
-# Cập nhật file requirements để GitHub Actions biết cần cài gì
 pytest
 flake8
