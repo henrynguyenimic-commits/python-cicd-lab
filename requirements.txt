@@ -1,1 +1,4 @@
 pytest==9.0.2
+# Cập nhật file requirements để GitHub Actions biết cần cài gì
+echo "pytest" > requirements.txt
+echo "flake8" >> requirements.txt
